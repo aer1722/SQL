@@ -1,0 +1,22 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, quanity INTEGER, price INTEGER, item_type TEXT);
+INSERT INTO store VALUES ( 1, "shirt", 5, 20, "clothing");
+INSERT INTO store VALUES ( 2, "pants", 3, 40, "clothing");
+INSERT INTO store VALUES ( 3, "bra", 7, 25, "clothing");
+INSERT INTO store VALUES ( 4, "shoe", 5, 50, "accessories");
+INSERT INTO store VALUES ( 5, "sunglasses", 7, 10, "accessories");
+INSERT INTO store VALUES (6, "lipgloss", 10, 3, "makeup");
+INSERT INTO store VALUES (7, "eyeshadow", 10, 4, "makeup");
+INSERT INTO store VALUES (8, "blouse", 5, 22, "clothing");
+INSERT INTO store VALUES (9, "mascara", 10, 4, "makeup");
+INSERT INTO store VALUES (10, "blush", 10, 4, "makeup");
+INSERT INTO store VALUES (11, "underwear", 4, 3, "clothing");
+INSERT INTO store VALUES (12, "jeans", 10, 45, "clothing");
+INSERT INTO store VALUES (13, "hats", 7, 7, "accessories");
+INSERT INTO store VALUES (14, "socks", 20, 2, "accessories");
+INSERT INTO store VALUES (15, "belt", 5, 10, "accessories");
+
+--Display the database ordered by price.
+SELECT * from store ORDER BY price;
+
+--What products do we have 10 or more of?
+SELECT * from store WHERE quanity >=10;
